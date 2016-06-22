@@ -1,0 +1,586 @@
+
+
+<nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
+      <button type="button" class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Zolton's</a>
+      <div id="navbar">
+        <nav class="nav navbar-nav pull-xs-left">
+          <a class="nav-item nav-link" href="#">Home</a>
+          <a class="nav-item nav-link" href="#">Settings</a>
+          <a class="nav-item nav-link" href="#">Help</a>
+          <a class="nav-item nav-link" href="#">Login</a>
+        </nav>
+        <form class="pull-xs-right">
+          <input type="text" class="form-control" placeholder="Search...">
+        </form>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Retail</h1>
+
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="400" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="400" height="200" class="img-fluid" alt="Generic placeholder thumbnail">
+              <h4>Label</h4>
+              <span class="text-muted">Something else</span>
+            </div>
+          </div>
+
+          <h2>Retail & Service Sales</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Stylist</th>
+                  <th>Retail</th>
+                  <th>Services</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Robert</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="number" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1" id="Rob1" oninput="sum()">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="number" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1" id="Rob2" oninput="sum()">
+                    </div>
+                  </td>
+                  <td>
+                    <form class="form-control">
+                      <p id="demo2"></p>  
+                    </form>
+                    <script type="text/javascript">
+                      function sum() { 
+                        var fn, ln; 
+                        fn = parseInt(document.getElementById("Rob1").value, 10);
+                        ln = parseInt(document.getElementById("Rob2").value, 10); 
+                        document.getElementById("demo2").innerHTML = "$" + (fn + ln); 
+                        }
+                    </script>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Erin</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Sarah</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Chad</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Jason</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Ashlynn</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Brenda</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Kasia</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Nick</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Shea</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Julie</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Kelly</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Charlie</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Kim</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Miranda</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Rachel</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Cindy</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Margaret</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Andy</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Julia</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>K</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>Brittney</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>Courtney</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>Brie</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>Chloe</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>Adeline</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>Maggie</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                  <tr>
+                  <td>28</td>
+                  <td>Thomas</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                  <tr>
+                  <td>29</td>
+                  <td>Harper</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                  <tr>
+                  <td>30</td>
+                  <td>Nina</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>Garrett</td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Retail Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">$</span>
+                      <input type="text" class="form-control" placeholder="Insert Service Sales" aria-describedby="basic-addon1">
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!--BootStraps Random Shit-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
